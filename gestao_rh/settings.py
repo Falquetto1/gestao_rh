@@ -28,6 +28,7 @@ INSTALLED_APPS = [
     'apps.documentos',
     'apps.registro_hora_extra',
     'apps.website',
+    'bootstrapform',
 ]
 
 MIDDLEWARE = [
