@@ -12,6 +12,7 @@ class HoraExtraList(ListView):
         empresa_logada = self.request.user.funcionario.empresa
         return RegistroHoraExtra.objects.filter(funcionario__empresa=empresa_logada)
 
+
 class HoraExtraEdit(UpdateView):
     model = RegistroHoraExtra
     form_class = RegistroHoraExtraForm
@@ -25,6 +26,7 @@ class HoraExtraEdit(UpdateView):
 class HoraExtraDelete(DeleteView):
     model = RegistroHoraExtra
     success_url = reverse_lazy('list_hora_extra')
+
 
 class HoraExtraCreate(CreateView):
     model = RegistroHoraExtra
